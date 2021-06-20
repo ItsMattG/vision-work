@@ -9,7 +9,7 @@ $(document).ready(function() { /* document.ready means the code can only run aft
           $('nav').removeClass('sticky');
       }
   }, {
-      offset: '60px;' /* means this function will occur 60px before reaching that class */
+      offset: '300px;' /* means this function will occur 60px before reaching that class */
   });
 
   /* Scroll on buttons */

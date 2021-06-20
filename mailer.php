@@ -7,9 +7,9 @@
       $message = trim($_POSST["message"]);
 
       // Check the data.
-      if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-          header("Location: input domain of the webpage success=-1#form  ")
-      }
+      if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)){
+		 header("Location: input domain of the webpage success=-1#form  ")
+		}
 
       // Set the recipient email address. Update this to YOUR desired email address.
       $recipient = "VisionWork@outlook.com";
