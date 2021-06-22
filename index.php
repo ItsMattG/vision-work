@@ -19,24 +19,24 @@
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> <!-- for the counter -->
     
-    <title>Aspect Landscaping</title>
+    <title>Vision Work Landscaping</title>
 
     </head>
 
     <body>
         <header>
-            <nav class="sticky">
+            <nav>
                 <div class="row">
-                    <a href="http://127.0.0.1:5500/index.html#"><img src="resources/img/logo.png" alt="Aspect logo" class="logo"></a>
-                    <a href="http://127.0.0.1:5500/index.html#"><img src="resources/img/logo.png" alt="Aspect logo" class="logo-black"></a>
-                    <a href="http://127.0.0.1:5500/index.html#"><img src="resources/img/title.png" alt="Aspect title" class="title"></a>
+                    <a href="http://127.0.0.1:5500/index.html#"><img src="resources/img/logo.png" alt="Vision Work logo" class="logo"></a>
+                    <a href="http://127.0.0.1:5500/index.html#"><img src="resources/img/logo.png" alt="Vision Work logo" class="logo-black"></a>
+                    <a href="http://127.0.0.1:5500/index.html#"><img src="resources/img/title.png" alt="Vision Work title" class="title"></a>
                     <!-- <img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black"> <!-- so there is a black logo --> 
                     <ul class="main-nav js--main-nav">
                         <li><a href="#features">About</a></li>
                         <li><a href="#why">Why choose us</a></li>
                         <li><a href="#contact">Contact & Location</a></li>
                     </ul>
-                    <a class="mobile-nav-icon"><ion-icon name="menu-outline"></ion-icon></a>
+                    <a class="mobile-nav-icon js--nav-icon"><ion-icon name="menu-outline"></ion-icon></a>
                 </div>
             </nav>
             <div class="hero-text-box">
@@ -51,7 +51,7 @@
             <div class="row">
                 <h2>Get superb quality &mdash; not mediocre quality</h2> <!--use the h1 element once and once only. ALSO instead of using a dash (-) you use &mdash-->
                 <p class="long-copy">
-                    Hello, we’re Aspect, your professional landscape designers. We know you yearn for a custom designed front and backyard. So let us take care of that for you. We are the best in the industry!
+                    Hello, we’re Vision Work, your professional landscape designers. We know you yearn for a custom designed front and backyard. So let us take care of that for you. We are the best in the industry!
                 </p>
             </div>
             <div class="row">
@@ -66,7 +66,7 @@
                     <ion-icon name="hammer-outline" class="icon-big"></ion-icon>
                     <h3>Build</h3>
                     <p class="p1">
-                        Aspect Landscaping is a certified registered builder by the Victorian Building Authority. You can be ensured that you will receive the highest quality as Aspect stay up to date with the new and upcoming trends!  
+					Vision Work Landscaping is a certified registered builder by the Victorian Building Authority. You can be ensured that you will receive the highest quality as Vision Work stay up to date with the new and upcoming trends!  
                     </p>
                 </div>
                 <div class="col span-1-of-4 box">
@@ -80,7 +80,7 @@
                     <ion-icon name="people-outline" class="icon-big"></ion-icon>
                     <h3>Local expertise</h3>
                     <p class="p1">
-                        The professionals at Aspect are experts in the flora of the Melbourne metropolitan region. They understand the plants and type of landscaping that will best suit your place and needs!  
+                        The professionals at Vision Work are experts in the flora of the Melbourne metropolitan region. They understand the plants and type of landscaping that will best suit your place and needs!  
                     </p>
                 </div>
             </div>
@@ -135,7 +135,7 @@
 
         <section class="section-why js--section-why" id="why" data-aos="fade-up">
             <div class="row">
-                <h2> Why choose Aspect landscaping? </h2>
+                <h2> Why choose Vision Work landscaping? </h2>
             </div>
             <div class="row">
                 <div class="col span-1-of-4 box border">
@@ -143,7 +143,7 @@
                     <h3> Quality Work </h3>
                     <div class="why-feature">
                     <p class="p1">
-                        Aspect landscaping operate with the highest quality materials and tools to ensure that you will be highly satisfied at the end of the project.
+					Vision Work landscaping operate with the highest quality materials and tools to ensure that you will be highly satisfied at the end of the project.
                     </p>
                     </div>
                 </div>
@@ -170,7 +170,7 @@
                     <h3> Focus on detail </h3>
                     <div class="why-feature">
                     <p class="p1">
-                        We at Aspect believe that having attention to detail makes the difference between a average yard and a stunning yard! 
+                        We at Vision Work believe that having attention to detail makes the difference between a average yard and a stunning yard! 
                     </p>
                     </div>
                 </div>
@@ -221,15 +221,17 @@
             </div>
         </section>
 
-        <section id="contact" data-aos="zoom-in">
-            <div class="row">
-                <h2>We're happy to hear from you</h2>
-            </div>
+        <section class="section-form" id="contact" data-aos="zoom-in">
+		<div class="row">
+			<h2>We're happy to hear from you</h2>
+		</div>
+
             <div class="contact">
-                <h4>
+                <h3>
                     If you wish to contact us please use the form below. 
                     <br>
-                    Alternatively you can contact us directly.
+				<br>
+                    Alternatively, you can contact us directly.
                     <br>
                     <br>
                     MOBILE: 0430 451 217
@@ -238,93 +240,91 @@
                     LOCATION: Melbourne Metropolitan Region
                     <br>
                     <br>
-                    EMAIL: aspectlc@outlook.com
-                </h4>
+                    EMAIL: VisionWork@outlook.com
+                </h3>
             </div>
-            <div class="row form-box" id="form">
-                <form method="post" action="mailer.php" class="contact-form"> <!-- need to setup more programming languages and stuff for the method and action to work where you actually receive the email-->
-                    <div class="row">
-                        <?php
-                        if($_GET['successs'] == 1) {
-                            echo "<div class=\"form-messages success\">Thank you! Your message has been sent.</div>";
-                        }
 
-                        if($_GET['successs'] == -1) {
-                          echo "<div class=\"form-messages success\">Ooops! Something went wrong. Please try again!</div>";
-                      }
-                        ?>
-                    </div>
-                    <div class="row">   
-                        <div class="col span-1-of-3">
-                            <label for="name">Name</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="text" name="name" id="name" placeholder="Your name" required> <!-- the required word means the form won't get sent until it's filled out-->
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label for="email">Email</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="email" name="email" id="email" placeholder="Your email" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label for="find-us">How did you find us?</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <select name="find-us" id="find-us">
-                                <option value="friends">Friends</option>
-                                <option value="search">Search engine</option>
-                                <option value="ad">Advertisement</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>Drop us a line</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <textarea name="message" placeholder="Your message"></textarea> 
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>&nbsp;</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="submit" value="Send it!">
-                        </div>
-                    </div>
-                </form>
+		  <div class="form-box" id="form">
+			<div class="row">
+				<form method="post" action="mailer.php" class="contact-form"> <!-- need to setup more programming languages and stuff for the method and action to work where you actually receive the email-->
+					
+					<div class="row">
+						<?php
+							if($_GET['success'] == 1) {
+								echo "<div class=\"form-messages success\">Thank you! Your message has been sent.</div>";
+							}
+
+							if($_GET['success'] == -1) {
+								echo "<div class=\"form-messages error\">Oops! Something went wrong. Please try again!</div>";
+							}
+						?>
+					</div>
+
+					<div class="row">  
+						<div class="col span-1-of-3">
+							<label for="name">Name</label>
+						</div>
+						<div class="col span-2-of-3">
+							<input type="text" name="name" id="name" placeholder="Your name" required> <!-- the required word means the form won't get sent until it's filled out-->
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label for="email">Email</label>
+						</div>
+						<div class="col span-2-of-3">
+							<input type="email" name="email" id="email" placeholder="Your email" required>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label for="find-us">How did you find us?</label>
+						</div>
+						<div class="col span-2-of-3">
+							<select name="find-us" id="find-us">
+								<option value="friends">Friends</option>
+								<option value="search">Search engine</option>
+								<option value="ad">Advertisement</option>
+								<option value="other">Other</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label>Drop us a line</label>
+						</div>
+						<div class="col span-2-of-3">
+							<textarea name="message" placeholder="Your message"></textarea> 
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label>&nbsp;</label>
+						</div>
+						<div class="col span-2-of-3">
+							<input type="submit" value="Send it!">
+						</div>
+					</div>
+				</form>
+			</div>
             </div>
         </section>
 
         <footer>
             <div class="row">
                 <div class="col span-1-of-2">
-                    <ul class="footer-nav">
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Press</a></li>
-                        <li><a href="#">iOS App</a></li>
-                        <li><a href="#">Android App</a></li>
-                    </ul>
-                </div>
-                <div class="col span-1-of-2">
                     <ul class="social-links">
-                        <li><a href="https://www.facebook.com/Aspectlandscapingandconstruction"><ion-icon name="logo-facebook" class="ion-social-facebook"></ion-icon></a></li>
-                        <li><a href="https://www.instagram.com/aspect_lc/"><ion-icon name="logo-instagram" class="ion-social-instagram"></ion-icon></a></li>
-                        <li><a href="mailto:aspectlc@outlook.com"><ion-icon name="mail-outline" class="ion-social-mail"></ion-icon></a></li>
+                        <li><a href="https://www.facebook.com/VisionWorkLandscapingAndConstruction"><ion-icon name="logo-facebook" class="ion-social-facebook"></ion-icon></a></li>
+                        <li><a href="https://www.instagram.com/VisionWork/"><ion-icon name="logo-instagram" class="ion-social-instagram"></ion-icon></a></li>
+                        <li><a href="mailto:VisionWork@outlook.com"><ion-icon name="mail-outline" class="ion-social-mail"></ion-icon></a></li>
                     </ul>
                 </div>
             </div>
             <div class="row">
                 <p>
-                    Copyright &copy; 2018 by Aspect Landscaping. All rights reserved.
+                    Copyright &copy; 2021 by Vision Work Landscaping. All rights reserved.
                 </p>
             </div>
 
@@ -335,7 +335,7 @@
         <script src="https://cdn.jsdelivr.net/npm/respond@0.9.0/main.min.js"></script> <!-- good for responsive on older browsers -->
         <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script> <!-- good for responsive on older browsers -->
         <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script> <!-- good for responsive on older browsers -->
-        <script src="vendors/JS/jquery.waypoints.min.js"></script> <!-- to use waypoints in js -->
+        <script src="vendors/js/jquery.waypoints.min.js"></script> <!-- to use waypoints in js -->
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script> <!-- aos animate library -->
         <script src="vendors/js/jquery.counterup.min.js"></script> <!-- counter script -->
         <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script> <!-- counter script -->
