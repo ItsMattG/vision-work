@@ -5,8 +5,10 @@ $(document).ready(function() { /* document.ready means the code can only run aft
   $('.js--section-features').waypoint(function(direction) { /* the direction allows us to choose wherever or not the function will run depending on the direction */
       if (direction == "down") {
           $('nav').addClass('sticky');
-      } else {
-          $('nav').removeClass('sticky');
+          $('#stickyHeading').addClass('stickyHeading');
+		} else {
+			$('nav').removeClass('sticky');
+			$('#stickyHeading').removeClass('stickyHeading');
       }
   }, {
       offset: '300px;' /* means this function will occur 60px before reaching that class */
@@ -19,11 +21,11 @@ $(document).ready(function() { /* document.ready means the code can only run aft
   });
 
   $('.js--scroll-to-why').click(function() {
-      $('html, body').animate({scrollTop: $('.js--section-why').offset().top}, 1000) 
+      $('html, body').animate({scrollTop: $('.js--section-why').offset().top}, 1000)
   });
 
   $('.js--scroll-to-top').click(function() {
-    $('html, body').animate({scrollTop: $('.js--scroll-to-top').offset().top}, 1000) 
+    $('html, body').animate({scrollTop: $('.js--scroll-to-top').offset().top}, 1000)
   });
 
   /* Navigation scroll */
@@ -38,8 +40,8 @@ $(document).ready(function() { /* document.ready means the code can only run aft
       .click(function(event) {
       // On-page links
           if (
-              location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-              && 
+              location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+              &&
               location.hostname == this.hostname
           ) {
       // Figure out element to scroll to
@@ -71,18 +73,18 @@ $(document).ready(function() { /* document.ready means the code can only run aft
   $('.js--nav-icon').click(function() {
       var nav = $('.js--main-nav');
       var icon = $('.js--nav-icon ion-icon');
-      
+
       if (icon.attr("name") == "menu-outline") {
           icon.attr("name", "close-outline");
-       } 
+       }
        else {
           icon.attr("name", "menu-outline")
        }
 
        /* appear and disappear */
        nav.slideToggle(200);
-       
+
     });
-  
+
 
 });

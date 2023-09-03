@@ -3,14 +3,14 @@
     #3fbb2b
     #4cd137
     #3fbb2b
-*/ 
+*/
 
 /* ! --------------------------------- */
 /* ! BASIC SETUP */
 /* ! --------------------------------- */
 
 * { /* the * targets all elements */
-  margin: 0; 
+  margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -41,7 +41,7 @@ body {
 /* ! --------------------------------- */
 
 .row {
-  max-width: 1140px; /* ? only layout that will be in px and not % */ 
+  max-width: 1140px; /* ? only layout that will be in px and not % */
   margin: 0 auto; /* (to center all rows) shortcut instead of doing 0 auto 0 auto, just do 0 auto, the 0 will be for the top and bottom */
 }
 
@@ -53,15 +53,15 @@ section { padding: 80px 0; } /* ? use padding instead of margin as later having 
 /* ! HEADINGS */
 /* ! --------------------------------- */
 
-h1, 
-h2, 
+h1,
+h2,
 h3 {
     font-weight: 400;
     text-transform: uppercase; /* ? makes all text uppercase */
 }
 
 h1 {
-    margin-top: 0; /* ? to remove the whitespace above */ 
+    margin-top: 0; /* ? to remove the whitespace above */
     margin-bottom: 20px;
     color: #fff;
     font-size: 280%; /* it will be 240% of the font-size set at the html element, meaning it will be 48px, for responsive web design this is essential */
@@ -78,8 +78,8 @@ h2 {
 }
 
 .contact {
-  margin-left: 32%;
-  margin-top: 1%;
+  text-align: center;
+  margin-top: -10px;
   word-spacing: 5px;
   letter-spacing: 1px;
 }
@@ -110,7 +110,7 @@ h2:after { /* will put stuff after the h2 element */
   text-align: center;
 }
 
-.p1 { 
+.p1 {
   font-size: 90%;
   line-height: 145%;
 }
@@ -173,7 +173,7 @@ h2:after { /* will put stuff after the h2 element */
   /* ? secrets to align text and icons */
   line-height: 120%;
   vertical-align: middle;
-  margin-top: -5px; 
+  margin-top: -5px;
 }
 
 /* ! --------------------------------- */
@@ -213,7 +213,7 @@ a:active {
 .btn:link, /* ? changes how a link looks before and after visited */
 .btn:visited,
 input[type=submit] {
-    display: inline-block; /* normal a element is an inline element but we want it to be an inline block so we can give it padding */ 
+    display: inline-block; /* normal a element is an inline element but we want it to be an inline block so we can give it padding */
     padding: 10px 30px; /* ? applies 10px padding top and bottom, and 30px to the right and left */
     font-weight: 300;
     text-decoration: none; /* removes hyperlink */
@@ -226,7 +226,7 @@ input[type=submit] {
 .btn-full:link,
 .btn-full:visited,
 input[type=submit] {
-    background-color: #4cd137;
+    background-color: #127b01;
     border: 1px solid #4cd137;
     color: #fff;
     margin-right: 15px;
@@ -277,7 +277,7 @@ header {
           transform: translate(-50%, -50%); /* to reposition half of the elements width and height */
 }
 
-.logo { 
+.logo {
   height: 70px;
   width: auto;
   float: left;
@@ -292,12 +292,12 @@ header {
   margin: 5px 0;
 }
 
-.title { 
-  height: 100px;
+.title {
+  height: 70px;
   margin-left: 1%;
   width: auto;
   float: left;
-  margin-top: 20px;
+  margin-top: 32px;
 }
 
 /* ! MAIN NAVI */
@@ -341,11 +341,26 @@ header {
   z-index: 9999; /* means our sticky nav will always be on top of everything else */
 }
 
+.stickyHeading {
+	display: inline-block !important;
+	margin-top: 0; /* ? to remove the whitespace above */
+	padding-left: 20px;
+	padding-top: 6px;
+	padding-bottom: -10px;
+	font-weight: 400;
+    text-transform: uppercase; /* ? makes all text uppercase */
+    color: #555;
+    font-size: 180%; /* it will be 240% of the font-size set at the html element, meaning it will be 48px, for responsive web design this is essential */
+    word-spacing: 4px;
+    letter-spacing: 1px; /* ? not that if you want the name/sentence to all fit on one line then either reduce or remove the letter spacing */
+
+}
+
 .sticky .main-nav { margin-top: 18px; }
 
 .sticky .main-nav li a:link, /* this means that these styles will only apply if the .main-nav class is inside the sticky class (which it is looking at the html) */
 .sticky .main-nav li a:visited {
-  padding: 16px 0; 
+  padding: 16px 0;
   color: #555;
 }
 
@@ -378,7 +393,7 @@ header {
 /* ! LANDSCAPE */
 /* ! --------------------------------- */
 
-.section-landscape { padding: 0; } /* ? to remove the invisible padding going from the picture to the section above with the text */ 
+.section-landscape { padding: 0; } /* ? to remove the invisible padding going from the picture to the section above with the text */
 
 .landscape-showcase {
   list-style: none;
@@ -536,55 +551,6 @@ cite img {
 }
 
 /* ! --------------------------------- */
-/* ! SIGN UP */
-/* ! --------------------------------- */
-
-.section-plans { background-color: rgb(238, 238, 238); }
-
-.plan-box {
-  background-color: #fff;
-  border-radius: 5px;
-  width: 90%;
-  margin-left: 5%;
-  -webkit-box-shadow: 0 2px 2px #efefef;
-          box-shadow: 0 2px 2px #efefef; /* first value is x, then y, then blur, then colour */
-}
-
-.plan-box div {
-  padding: 15px;
-  border-bottom: 1px solid rgb(226, 226, 226);
-}
-
-.plan-box div:first-child {
-  background-color: #fdfdfd;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.plan-box div:last-child {
-  text-align: center; /* aligns the button center */
-  border: 0;
-}
-
-.plan-price {
-  font-size: 300%;
-  margin-bottom: 10px;
-  font-weight: 400;
-  color: #4cd137;
-}
-
-.plan-price span { /*? remember this is the child element of the plan-price */
-  font-size: 30%;
-  font-weight: 300;
-}
-
-.plan-price-meal { font-size: 80%; }
-
-.plan-box ul { list-style: none; }
-
-.plan-box ul li { padding: 5px 0; }
-
-/* ! --------------------------------- */
 /* ! FORM */
 /* ! --------------------------------- */
 
@@ -699,3 +665,194 @@ footer p {
   text-align: center;
   margin-top: 20px;
 }
+
+/* form */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap");
+$color-gray: #515151;
+$color-black: #000;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.form-main {
+	padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .main-wrapper {
+    border-radius: 10px;
+    padding: 45px;
+    width: 40%;
+    box-shadow: 0 0 5px 5px #00000020;
+    backdrop-filter: blur(5px);
+    background-color: #ffffff85;
+    @media screen and (max-width: 991px) {
+      width: 70%;
+    }
+    @media screen and (max-width: 767px) {
+      width: 90%;
+    }
+    .form-head {
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: 600;
+      text-align: center;
+      margin: 0px 0 25px;
+    }
+    .form-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 15px;
+      .form-card {
+        position: relative;
+        width: 100%;
+
+        .form-input {
+          padding: 20px 25px 15px;
+          width: 100%;
+          border: 1px solid $color-black;
+          border-radius: 5px;
+          background: transparent;
+          outline: none;
+          font-size: 20px;
+          line-height: 30px;
+          font-weight: 400;
+              box-sizing: border-box;
+
+          &:valid,
+          &:focus {
+            border: 1px solid $color-gray;
+          }
+
+          &:valid ~ .form-label,
+          &:focus ~ .form-label,
+		  &:not( :placeholder-shown) ~ .form-label {
+            color: $color-gray;
+            top: 30%;
+            transform: translateY(-70%);
+            font-size: 13px;
+            line-height: 23px;
+          }
+
+          &:-webkit-autofill,
+          &:-webkit-autofill:hover,
+          &:-webkit-autofill:focus,
+          &:-webkit-autofill:active {
+            transition: background-color 9999s ease-in-out 0s;
+          }
+          &::-webkit-outer-spin-button,
+          &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+        }
+
+        .form-label {
+          position: absolute;
+          left: 25px;
+          top: 50%;
+          transform: translateY(-50%);
+          pointer-events: none;
+          transition: 0.3s;
+          margin: 0;
+          font-size: 18px;
+          line-height: 28px;
+          font-weight: 500;
+        }
+        .form-textarea {
+          padding: 20px 25px 15px;
+          width: 100%;
+          border: 1px solid $color-black;
+          border-radius: 5px;
+          background: transparent;
+          outline: none;
+          font-size: 20px;
+          line-height: 30px;
+          font-weight: 400;
+		  height: 150px;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          resize: none;
+			box-sizing: border-box;
+		display: flex;
+		overflow:hidden;
+		min-height:100px;
+
+          &:valid,
+          &:focus {
+            border: 1px solid $color-gray;
+          }
+
+          &:valid ~ .form-textarea-label,
+          &:focus ~ .form-textarea-label {
+            color: $color-gray;
+            top: 25px;
+            transform: translateY(-82%);
+            font-size: 13px;
+            line-height: 23px;
+          }
+
+          &:-webkit-autofill,
+          &:-webkit-autofill:hover,
+          &:-webkit-autofill:focus,
+          &:-webkit-autofill:active {
+            transition: background-color 9999s ease-in-out 0s;
+          }
+        }
+        .form-textarea-label {
+          position: absolute;
+          left: 25px;
+          top: 35px;
+          transform: translateY(-70%);
+          pointer-events: none;
+          transition: 0.3s;
+          margin: 0;
+          font-size: 18px;
+          line-height: 28px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+.btn-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+padding: 16px 0 0;
+color: white;
+  }
+.btn-wrap button {
+	background-color: #127b01;
+    border: 1px solid #4cd137;
+    margin-right: 15px;
+	color: white;
+	letter-spacing: 2px;
+	font-weight: bold;
+
+  padding: 0 32px;
+  font-size: 18px;
+  line-height: 48px;
+  border: 1px solid transparent;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.5s ease;
+  cursor: pointer; box-shadow: 0 0 5px 5px #00000020;
+}
+.btn-wrap button:hover {
+	background-color: #127b01;
+	color: #127b01;
+    border: 1px solid #4cd137;
+  background: transparent;
+
+}
+
+/* text area */
+
