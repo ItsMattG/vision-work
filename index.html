@@ -241,7 +241,8 @@
 					<div class="form-main">
 						<div class="main-wrapper">
 						  <h2 class="form-head">Contact Form</h2>
-						  <form class="form-wrapper" name="contact" method="POST" data-netlify="true" onSubmit="submit" data-netlify-honeypot="bot-field" action="/success/">
+						  <h2 id="thankYou" style="display: none; color: #127b01; text-align: left;">Thank you! <br>Your form has been submitted and we'll get back to you soon.</h3>
+						  <form id="form" class="form-wrapper" name="contact" method="POST" data-netlify="true" onSubmit="submit" data-netlify-honeypot="bot-field">
 							<input class="d-none" name="bot-field">
 							<div class="form-card">
 							  <input
@@ -329,6 +330,19 @@
                 offset: 100,
                 duration: 1500
             });
+
+			const element = document.querySelector('form');
+			element.addEventListener('submit', event => {
+				event.preventDefault();
+
+				var allInputs = document.querySelectorAll('input');
+				var allInputsTextArea = document.querySelectorAll('textarea');
+				allInputs.forEach(singleInput => singleInput.value = '');
+				allInputsTextArea.forEach(singleInput => singleInput.value = '');
+
+				document.getElementById('thankYou').className = 'thankYou'
+				thank
+			});
 
 			function autoheight(element) {
 				var el = document.getElementById(element);

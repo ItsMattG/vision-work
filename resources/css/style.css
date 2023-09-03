@@ -918,6 +918,12 @@ padding: 20px 25px 15px;
           font-weight: 500;
 }
 
+.thankYou {
+	display: flow !important;
+	text-transform: inherit;
+	margin-bottom: 20px;
+}
+
 .btn-wrap {
   display: flex;
   justify-content: center;
