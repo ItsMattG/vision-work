@@ -767,6 +767,10 @@ footer p {
 	line-height: 23px;
 }
 
+.d-none {
+	display: none;
+}
+
 @-moz-document url-prefix() {
 	.form-head {
 		padding-bottom: 60px;
