@@ -294,7 +294,7 @@ header {
 
 .title {
   height: 70px;
-  margin-left: 1%;
+  margin-left: 3%;
   width: auto;
   float: left;
   margin-top: 32px;
@@ -412,6 +412,11 @@ header {
   margin: -1px;
   overflow: hidden; /* so the image doesn't overflow past the container */
   background-color: #000;
+}
+
+.features {
+	min-height: 456px;
+	height: 47vh;
 }
 
 .landscape-photo img {

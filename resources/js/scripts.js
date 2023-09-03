@@ -17,11 +17,15 @@ $(document).ready(function() { /* document.ready means the code can only run aft
   /* Scroll on buttons */
 
   $('.js--scroll-to-start').click(function() {
-      $('html, body').animate({scrollTop: $('.js--section-features').offset().top}, 1000) /* we select this class when we click on it we have an animation that scrolls to the top of the js section plans section with a speed of 1 second (1000) */
+      $('html, body').animate({scrollTop: $('.js--section-features').offset().top - 290}, 1000) /* we select this class when we click on it we have an animation that scrolls to the top of the js section plans section with a speed of 1 second (1000) */
   });
 
   $('.js--scroll-to-why').click(function() {
-      $('html, body').animate({scrollTop: $('.js--section-why').offset().top}, 1000)
+      $('html, body').animate({scrollTop: $('.js--section-why').offset().top - 130}, 1000)
+  });
+
+  $('.js--scroll-to-contact').click(function() {
+      $('html, body').animate({scrollTop: $('.js--section-contact').offset().top - 270}, 1000)
   });
 
   $('.js--scroll-to-top').click(function() {
