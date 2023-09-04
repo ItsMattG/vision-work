@@ -260,7 +260,6 @@ input[type=submit] /* specifically changes the border colour when hovered */ {  
 header {
 	background:url("img/hero.jpg");
 	background-repeat: no-repeat;
-    background-attachment: fixed;
     -o-background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -270,7 +269,6 @@ header {
   background-size: cover; /* to see the whole image for it not to be zoomed in */
   background-position: center; /* ? to center image */
   height: 100vh; /* to extend the image to cover the entire background */
-  background-attachment: fixed; /*? fixes the image so when you scroll it has a cool effect */
 }
 
 .hero-text-box {
@@ -534,7 +532,6 @@ header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.80),rgba(0, 0, 0, 0.80)), url(img/testimonial.png);
   background-size: cover;
   color: #fff;
-  background-attachment: fixed;
 }
 
 blockquote {
