@@ -24,7 +24,7 @@
     </head>
 
     <body>
-        <header>
+        <header id="header">
             <nav>
                 <div class="row">
                     <a><img src="resources/img/logo.png" alt="Vision Works logo" class="logo"></a>
@@ -191,7 +191,7 @@
             </div>
         </section>
 
-        <section class="section-testimonials" data-aos="flip-up">
+        <section id="testimonials" class="section-testimonials" data-aos="flip-up">
             <div class="row">
                 <h2>Our customers highly recommend us!</h2>
             </div>
@@ -350,7 +350,8 @@
 				el.style.height = "5px";
 				el.style.height = (el.scrollHeight)+"px";
 			}
-			if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+			var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+			if (isSafari) {
 				document.getElementById('oneLabel').remove();
 				document.getElementById('twoLabel').remove();
 				document.getElementById('threeLabel').remove();
@@ -360,6 +361,12 @@
 				document.getElementById('emailInput').placeholder = 'Email Address'
 				document.getElementById('phoneInput').placeholder = 'Phone Number'
 				document.getElementById('ta').placeholder = 'Message'
+			}
+
+			var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+			if (!isSafari) {
+				document.getElementById('header').style.backgroundAttachment = 'fixed'
+				document.getElementById('testimonials').style.backgroundAttachment = 'fixed'
 			}
 
           </script>
