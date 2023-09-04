@@ -27,9 +27,9 @@
         <header>
             <nav>
                 <div class="row">
-                    <a href="http://127.0.0.1:5500/index.html#"><img src="resources/img/logo.png" alt="Vision Works logo" class="logo"></a>
-                    <a href="http://127.0.0.1:5500/index.html#"><img src="resources/img/logo.png" alt="Vision Works logo" class="logo-black"></a>
-                    <a href="http://127.0.0.1:5500/index.html#"><img src="resources/img/title.png" alt="Vision Works title" class="title"></a>
+                    <a><img src="resources/img/logo.png" alt="Vision Works logo" class="logo"></a>
+                    <a><img src="resources/img/logo.png" alt="Vision Works logo" class="logo-black"></a>
+                    <a><img src="resources/img/title.png" alt="Vision Works title" class="title"></a>
 					<div id="stickyHeading" style="display: none;">Vision Works</div>
                     <ul class="main-nav js--main-nav">
                         <li class="js--scroll-to-start"><a href="#">About</a></li>
@@ -245,35 +245,38 @@
 							<input class="d-none" name="bot-field">
 							<div class="form-card">
 							  <input
+							  id="nameInput"
 								class="form-input"
 								type="text"
 								name="name"
 								required="required"
 								placeholder=" "
 							  />
-							  <label class="form-label" for="full_name">Full Name</label>
+							  <label id="oneLabel" class="form-label" for="full_name">Full Name</label>
 							</div>
 
 							<div class="form-card">
 							  <input
+							  id="emailInput"
 								class="form-input"
 								type="email"
 								name="email"
 								required="required"
 								placeholder=" "
 							  />
-							  <label class="form-label" for="email">Email</label>
+							  <label id="twoLabel" class="form-label" for="email">Email</label>
 							</div>
 
 							<div class="form-card">
 							  <input
+							  id="phoneInput"
 								class="form-input"
 								type="number"
 								name="phoneNumber"
 								required="required"
 								placeholder=" "
 							  />
-							  <label class="form-label" for="phone_number">Phone number</label>
+							  <label id="threeLabel" class="form-label" for="phone_number">Phone number</label>
 							</div>
 
 							<div class="form-card text-area-rar">
@@ -288,7 +291,7 @@
 								onkeyup="autoheight('ta')"
 								style="min-height: 150px;"
 							  ></textarea>
-							  <label class="form-textarea-label" for="message"
+							  <label id="fourLabel" class="form-textarea-label" for="message"
 								>Message</label
 							  >
 							</div>
@@ -347,6 +350,18 @@
 				el.style.height = "5px";
 				el.style.height = (el.scrollHeight)+"px";
 			}
+			if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+				document.getElementById('oneLabel').remove();
+				document.getElementById('twoLabel').remove();
+				document.getElementById('threeLabel').remove();
+				document.getElementById('fourLabel').remove();
+
+				document.getElementById('nameInput').placeholder = 'Name'
+				document.getElementById('emailInput').placeholder = 'Email Address'
+				document.getElementById('phoneInput').placeholder = 'Phone Number'
+				document.getElementById('ta').placeholder = 'Message'
+			}
+
           </script>
         <script>
         jQuery(document).ready(function( $ )
