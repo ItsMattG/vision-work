@@ -258,9 +258,15 @@ input[type=submit] /* specifically changes the border colour when hovered */ {  
 /* ! --------------------------------- */
 
 header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.70)), to(rgba(0, 0, 0, 0.70))), url(img/hero.png);
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url(img/hero.png);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url(img/hero.png); /* ? the 0.7 is the transparency of the gradient, meaning just applied a black colour over the top of the image */
+	background:url("img/hero.jpg")
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.70)), to(rgba(0, 0, 0, 0.70))), url(img/hero.jpg);
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url(img/hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url(img/hero.jpg); /* ? the 0.7 is the transparency of the gradient, meaning just applied a black colour over the top of the image */
   background-size: cover; /* to see the whole image for it not to be zoomed in */
   background-position: center; /* ? to center image */
   height: 100vh; /* to extend the image to cover the entire background */
@@ -747,6 +753,10 @@ footer p {
 	color: gray;
 	top: 30%;
 	transform: translateY(-70%);
+	-ms-transform: translateY(-70%);
+	-webkit-transform: translateY(-70%);
+	-moz-transform: translateY(-70%);
+	-o-transform: translateY(-70%);
 	font-size: 13px;
 	line-height: 23px;
 }
@@ -755,6 +765,10 @@ footer p {
 	color: gray;
 	top: 30%;
 	transform: translateY(-70%);
+	-ms-transform: translateY(-70%);
+	-webkit-transform: translateY(-70%);
+	-moz-transform: translateY(-70%);
+	-o-transform: translateY(-70%);
 	font-size: 13px;
 	line-height: 23px;
 }
@@ -763,6 +777,10 @@ footer p {
 	color: gray;
 	top: 30%;
 	transform: translateY(-70%);
+	-ms-transform: translateY(-70%);
+	-webkit-transform: translateY(-70%);
+	-moz-transform: translateY(-70%);
+	-o-transform: translateY(-70%);
 	font-size: 13px;
 	line-height: 23px;
 }
@@ -788,6 +806,10 @@ footer p {
 	color: black;
 	top: -55%;
 	transform: translateY(-70%);
+	-ms-transform: translateY(-70%);
+	-webkit-transform: translateY(-70%);
+	-moz-transform: translateY(-70%);
+	-o-transform: translateY(-70%);
 	font-size: 13px;
 	line-height: 23px;
 	}
@@ -818,6 +840,10 @@ footer p {
             color: gray;
             top: 30%;
             transform: translateY(-70%);
+			-ms-transform: translateY(-70%);
+			-webkit-transform: translateY(-70%);
+			-moz-transform: translateY(-70%);
+			-o-transform: translateY(-70%);
             font-size: 13px;
             line-height: 23px;
           }
@@ -840,6 +866,10 @@ footer p {
           left: 25px;
           top: 50%;
           transform: translateY(-50%);
+		  -ms-transform: translateY(-50%);
+		  -webkit-transform: translateY(-50%);
+		  -moz-transform: translateY(-50%);
+		  -o-transform: translateY(-50%);
           pointer-events: none;
           transition: 0.3s;
           margin: 0;
@@ -852,6 +882,10 @@ footer p {
 	color: gray;
 	top: 25px;
 	transform: translateY(-82%);
+	-ms-transform: translateY(-82%);
+	-webkit-transform: translateY(-82%);
+	-moz-transform: translateY(-82%);
+	-o-transform: translateY(-82%);
 	font-size: 13px;
 	line-height: 23px;
 }
@@ -860,6 +894,10 @@ footer p {
 	color: gray;
 	top: 25px;
 	transform: translateY(-82%);
+	-ms-transform: translateY(-82%);
+	-webkit-transform: translateY(-82%);
+	-moz-transform: translateY(-82%);
+	-o-transform: translateY(-82%);
 	font-size: 13px;
 	line-height: 23px;
 }
@@ -893,6 +931,10 @@ padding: 20px 25px 15px;
             color: gray;
             top: 25px;
             transform: translateY(-82%);
+			-ms-transform: translateY(-82%);
+			-webkit-transform: translateY(-82%);
+			-moz-transform: translateY(-82%);
+			-o-transform: translateY(-82%);
             font-size: 13px;
             line-height: 23px;
           }
@@ -910,6 +952,10 @@ padding: 20px 25px 15px;
           left: 25px;
           top: 35px;
           transform: translateY(-70%);
+		  -ms-transform: translateY(-70%);
+		  -webkit-transform: translateY(-70%);
+		  -moz-transform: translateY(-70%);
+		  -o-transform: translateY(-70%);
           pointer-events: none;
           transition: 0.3s;
           margin: 0;
