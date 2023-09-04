@@ -523,15 +523,15 @@ header {
 /* ! --------------------------------- */
 
 .section-testimonials {
-	background:url("img/testimonial.jpg");
+	background:url("img/testimonial.png");
 	background-repeat: no-repeat;
     background-attachment: fixed;
     -o-background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
-  background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.80)),to(rgba(0, 0, 0, 0.80))), url(img/testimonial.jpg);
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.80),rgba(0, 0, 0, 0.80)), url(img/testimonial.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.80),rgba(0, 0, 0, 0.80)), url(img/testimonial.jpg);
+  background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.80)),to(rgba(0, 0, 0, 0.80))), url(img/testimonial.png);
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.80),rgba(0, 0, 0, 0.80)), url(img/testimonial.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.80),rgba(0, 0, 0, 0.80)), url(img/testimonial.png);
   background-size: cover;
   color: #fff;
   background-attachment: fixed;
