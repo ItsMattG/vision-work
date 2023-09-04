@@ -258,9 +258,9 @@ input[type=submit] /* specifically changes the border colour when hovered */ {  
 /* ! --------------------------------- */
 
 header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.70)), to(rgba(0, 0, 0, 0.70))), url(img/hero.jpg);
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url(img/hero.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url(img/hero.jpg); /* ? the 0.7 is the transparency of the gradient, meaning just applied a black colour over the top of the image */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.70)), to(rgba(0, 0, 0, 0.70))), url(img/hero.png);
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url(img/hero.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url(img/hero.png); /* ? the 0.7 is the transparency of the gradient, meaning just applied a black colour over the top of the image */
   background-size: cover; /* to see the whole image for it not to be zoomed in */
   background-position: center; /* ? to center image */
   height: 100vh; /* to extend the image to cover the entire background */
